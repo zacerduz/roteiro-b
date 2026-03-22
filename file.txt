@@ -1,0 +1,8 @@
+florenca-trip/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+└── data/
+    └── tripData.js

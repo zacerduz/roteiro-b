@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planejador de viagem para Florença - Maio 2026">
+  <meta name="theme-color" content="#8B4513">
+  
+  <title>🇮🇹 Florença 2026 - Planejador de Viagem</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇮🇹</text></svg>">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ==========================================
+       HEADER
+       ========================================== -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-title">
+        <span class="flag">🇮🇹</span>
+        <h1>Viagem a Florença</h1>
+      </div>
+      
+      <div class="header-dates">
+        📅 08 a 14 de Maio, 2026
+      </div>
+      
+      <div class="header-search">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Buscar atividades, locais..."
+          autocomplete="off"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       NAVEGAÇÃO
+       ========================================== -->
+  <nav class="nav-tabs">
+    <div class="nav-tabs-container">
+      <button class="nav-tab active" data-section="home">
+        <span class="tab-icon">🏠</span>
+        <span>Início</span>
+      </button>
+      <button class="nav-tab" data-section="itinerary">
+        <span class="tab-icon">📅</span>
+        <span>Itinerário</span>
+      </button>
+      <button class="nav-tab" data-section="reservations">
+        <span class="tab-icon">🎫</span>
+        <span>Reservas</span>
+      </button>
+      <button class="nav-tab" data-section="transport">
+        <span class="tab-icon">🚆</span>
+        <span>Transportes</span>
+      </button>
+      <button class="nav-tab" data-section="attractions">
+        <span class="tab-icon">🏛️</span>
+        <span>Atrações</span>
+      </button>
+      <button class="nav-tab" data-section="food">
+        <span class="tab-icon">🍝</span>
+        <span>Gastronomia</span>
+      </button>
+      <button class="nav-tab" data-section="distances">
+        <span class="tab-icon">🚶</span>
+        <span>Distâncias</span>
+      </button>
+      <button class="nav-tab" data-section="tips">
+        <span class="tab-icon">💡</span>
+        <span>Dicas</span>
+      </button>
+      <button class="nav-tab" data-section="map">
+        <span class="tab-icon">🗺️</span>
+        <span>Mapa</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       RESULTADOS DE BUSCA
+       ========================================== -->
+  <div id="searchResults" class="search-results">
+    <div class="search-results-header">
+      <span>🔍 Resultados da Busca</span>
+      <button id="searchResultsClose" class="search-results-close">&times;</button>
+    </div>
+    <div id="searchResultsList" class="search-results-list">
+      <!-- Resultados serão inseridos aqui -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       CONTEÚDO PRINCIPAL
+       ========================================== -->
+  <main class="main-content">
+    
+    <!-- SEÇÃO: HOME -->
+    <section id="home" class="section active">
+      <h2 class="section-title">🏠 Visão Geral da Viagem</h2>
+      <div id="homeContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: ITINERÁRIO -->
+    <section id="itinerary" class="section">
+      <h2 class="section-title">📅 Itinerário Completo</h2>
+      <div class="days-selector" id="daysContainer">
+        <!-- Botões dos dias gerados via JS -->
+      </div>
+      <div id="dayCardsContainer">
+        <!-- Cards dos dias gerados via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: RESERVAS -->
+    <section id="reservations" class="section">
+      <h2 class="section-title">🎫 Reservas e Ingressos</h2>
+      <div id="reservationsContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: TRANSPORTES -->
+    <section id="transport" class="section">
+      <h2 class="section-title">🚆 Checklist de Transportes</h2>
+      <div id="transportContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: ATRAÇÕES -->
+    <section id="attractions" class="section">
+      <h2 class="section-title">🏛️ Pontos de Interesse</h2>
+      <div id="attractionsContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: GASTRONOMIA -->
+    <section id="food" class="section">
+      <h2 class="section-title">🍝 Dicas Gastronômicas</h2>
+      <div id="foodContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: DISTÂNCIAS -->
+    <section id="distances" class="section">
+      <h2 class="section-title">🚶 Tempos de Caminhada</h2>
+      <div id="distancesContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: DICAS -->
+    <section id="tips" class="section">
+      <h2 class="section-title">💡 Dicas Importantes</h2>
+      <div id="tipsContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+    <!-- SEÇÃO: MAPA -->
+    <section id="map" class="section">
+      <h2 class="section-title">🗺️ Mapas e Localização</h2>
+      <div id="mapContent">
+        <!-- Conteúdo gerado via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="app-footer">
+    <p>🇮🇹 Viagem a Florença • Maio 2026</p>
+    <p>Feito com ❤️ para uma experiência inesquecível na Toscana</p>
+  </footer>
+
+  <!-- ==========================================
+       SCRIPTS
+       ========================================== -->
+  <script src="data/tripData.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
